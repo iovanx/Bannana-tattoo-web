@@ -1,0 +1,665 @@
+/* Codigo para que se limpie el codigo y se eviten errores de margen o padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Codigo para que se aplique el estilo a toda la pagina como fuentes fondos tamaños de letra */
+body {
+    background-color: #fff3c4;
+    font-family: 'Roboto', sans-serif;
+    color: #001924;
+    line-height: 1.6;
+}
+
+/* Codigo para que los titulos tengan estilo agradable y estetico */
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Codigo que define donde empieza y termina la pagina */
+.sitio {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Codigo para que el encabezado tenga estilo y se vea bien */
+header {
+    background-color: #e6c649;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Codigo para los textos del logo */
+.texto-logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Codigo para definir el tamaño y la ubicacion de la imagen del logo */
+.Logo-imagen {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+/* Codigo para el color del texto del logo */
+.site-logo-text {
+    color: rgb(247, 247, 85);
+}
+
+/* Codigo para el menú de enlaces de la parte superior derecha */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #001924;
+    font-weight: bold;
+}
+
+/* Codigo para que cuando el raton pasa por encima de los enlaces cambien de color a rosa */
+nav a:hover {
+    color: #F1689C;
+}
+
+/* Codigo para el modelo de caja del apartado de chicas */
+.seccion-chicas {
+    padding: 60px 0;
+    background-color: #ffdd55;
+}
+
+/* Esto hace que la imagen y el texto se vean centrados */
+.ajustes-de-foto {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Codigo para el grid de la seccion principal del index con imagen grande */
+.ajustes-de-foto-inicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Codigo para definir el estilo de la imagen */
+.Foto-chicas img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px #F1689C;
+}
+
+/* Codigo para la presentacion de las artistas */
+.foto-de-tatuadora {
+    width: 300px;
+}
+
+.foto-de-tatuadora img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Lista de características */
+.lista-caracteristicas {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.lista-caracteristicas li {
+    margin-bottom: 10px;
+}
+
+/* Sección de portafolio (trabajos realizados) */
+.alinea-portafolio {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff3c4;
+}
+
+/* Codigo para mostrar trabajos en 3 columnas */
+.colum-portafolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Codigo para definir el comportamiento de cada trabajo del portafolio */
+.item-portafolio {
+    background-color: white;
+    padding: 10px 14px 6px 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Codigo de como se tienen que comportar las imagenes dentro de cada trabajo del portafolio */
+.item-portafolio img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background-color: white;
+}
+
+/* Codigo de como se tienen que comportar los titulos dentro de cada trabajo del portafolio */
+.item-portafolio h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+/* Codigo para definir el estilo de la sección de servicios */
+.estilo-servicios {
+    padding: 60px 0;
+    background-color: #ffdd55;
+    text-align: center;
+}
+
+/* Codigo para decidir el tamaño de la cuadrícula de servicios */
+.columna-servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Codigo que define como tiene que ser cada tarjeta de servicio */
+.tarjeta-servicio {
+    background-color: #e6c649;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* Iconos de los servicios */
+.icono-servicio {
+    font-size: 40px;
+    color: #F1689C;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Codigo para definir de que color es la seccion de contacto */
+.seccion-contacto {
+    padding: 60px 0;
+    background-color: #fff3c4;
+}
+
+/* Codigo para que los datos de contacto se vean bien */
+.info-contacto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* Enlaces de redes sociales y contacto */
+.info-contacto a {
+    color: #001924;
+    text-decoration: none;
+}
+
+/* Codigo para el pie de pagina */
+footer {
+    background-color: #111;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+
+/* Codigo para que el texto del pie de pagina se vea bien */
+.logo-pie-de-pagina {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f54f8e;
+}
+
+/* Estilos para el texto legal */
+.contenido-legal {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.contenido-legal h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #F1689C;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #F1689C;
+}
+
+.contenido-legal h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #001924;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenido-legal p, .contenido-legal li {
+    margin-bottom: 15px;
+}
+
+.resaltado {
+    color: #F1689C;
+    font-weight: bold;
+}
+
+.justi {
+    text-align: justify;
+}
+
+
+
+/* Contenedor principal de la página del portafolio */
+.pagina-portafolio {
+    background-color: #fff3c4;
+    padding: 60px 5% 80px;
+}
+
+/* Titulo principal */
+.titulo-portafolio {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #001924;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+/* Linea decorativa rosa bajo el titulo */
+.titulo-portafolio::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #F1689C;
+    margin: 12px auto 60px;
+    border-radius: 2px;
+}
+
+/* Bloque de cada artista */
+.bloque-artista {
+    margin-bottom: 80px;
+}
+
+/* Nombre de la artista con linea rosa lateral */
+.nombre-artista {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #001924;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+    padding-left: 16px;
+    border-left: 5px solid #F1689C;
+}
+
+/* Galeria de fotos sueltas con CSS Columns (efecto tipo Pinterest) */
+.galeria-fotos {
+    column-count: 3;
+    column-gap: 14px;
+}
+
+/* Cada foto suelta */
+.foto-tatuaje {
+    width: 100%;
+    display: block;
+    break-inside: avoid;
+    margin-bottom: 14px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+/* La imagen */
+.foto-tatuaje img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+
+/* Separador entre artistas */
+.separador-artista {
+    border: none;
+    border-top: 2px dashed #e6c649;
+    margin: 60px 0;
+}
+
+/* ────────────────────── PÁGINA DEL ESTUDIO ────────────────────── */
+/* Contenedor principal de la página del estudio */
+.pagina-estudio {
+    background-color: #fff3c4;
+    padding: 60px 5% 80px;
+}
+
+/* Galería de imágenes del estudio en 2 columnas */
+.galeria-estudio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+/* Cada contenedor de imagen del estudio */
+.imagen-estudio {
+    background-color: white;
+    padding: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 0px #F1689C;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover en las imágenes del estudio */
+.imagen-estudio:hover {
+    transform: translateY(-5px);
+    box-shadow: 12px 12px 0px #F1689C;
+}
+
+/* Imágenes dentro de la galería del estudio */
+.imagen-estudio img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+/*Video de youtube*/
+.seccion-video {
+    padding: 60px 0;
+    background-color: #fff3c4;
+    text-align: center;
+}
+
+.seccion-video h2 {
+    color: #001924;
+    margin-bottom: 10px;
+}
+
+.seccion-video p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contenedor-video {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 8px 8px 0px #F1689C;
+}
+
+.contenedor-video iframe {
+    display: block;
+    width: 100%;
+    border: none;
+}
+/*codigo cookies*/
+/* BANNER DE COOKIES - Banana Tattoo*/
+
+/* Fondo oscuro que bloquea la página */
+#cookie-banner {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#cookie-banner.visible {
+  display: flex;
+}
+
+/* Ventana centrada */
+.cookie-inner {
+  background-color: #001924;
+  color: #fff3c4;
+  border: 3px solid #e6c649;
+  border-radius: 12px;
+  padding: 32px 28px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  /* limitar altura para que no se corte en pantallas pequeñas */
+  max-height: 100vh;
+  overflow-y: auto;
+}
+.cookie-inner strong {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #e6c649;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.cookie-inner p {
+  font-size: 0.88rem;
+  color: #c8d8df;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.btn-aceptar {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 12px 36px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #F1689C;
+  color: #fff;
+  transition: background 0.2s;
+}
+
+.btn-aceptar:hover {
+  background-color: #d94d86;
+}
+
+/* ─── RESPONSIVE TABLETS ──────────────────────────────────────── */
+@media (max-width: 768px) {
+    header {
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .colum-portafolio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .columna-servicios {
+        grid-template-columns: 1fr;
+    }
+
+    .ajustes-de-foto {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .foto-de-tatuadora {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .ajustes-de-foto-inicio {
+        grid-template-columns: 1fr;
+    }
+
+    h1, h2, h3 {
+        font-size: 20px;
+    }
+
+    .item-portafolio {
+        padding: 10px 14px 6px 14px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .item-portafolio img {
+        height: 180px;
+    }
+
+    /* Galeria en tablet: 2 columnas */
+    .galeria-fotos {
+        column-count: 2;
+        column-gap: 10px;
+    }
+
+    .foto-tatuaje {
+        margin-bottom: 10px;
+    }
+
+    .titulo-portafolio {
+        font-size: 2.2rem;
+    }
+
+    /* Galería del estudio en tablet */
+    .galeria-estudio {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .imagen-estudio {
+        box-shadow: 8px 8px 0px #F1689C;
+    }
+}
+
+
+/* ─── RESPONSIVE MOVIL ────────────────────────────────────────── */
+@media (max-width: 480px) {
+    header {
+        padding: 8px 12px;
+    }
+
+    .texto-logo {
+        font-size: 16px;
+    }
+
+    .Logo-imagen {
+        width: 28px;
+        height: 28px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .sitio {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .colum-portafolio {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .item-portafolio {
+        padding: 10px 11px 6px 11px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .item-portafolio img {
+        height: 150px;
+    }
+
+    h1, h2, h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .tarjeta-servicio {
+        padding: 12px;
+    }
+
+    .icono-servicio {
+        font-size: 28px;
+    }
+
+    .info-contacto {
+        font-size: 13px;
+    }
+
+    /* Galeria en movil: 2 columnas pequeñas */
+    .galeria-fotos {
+        column-count: 2;
+        column-gap: 8px;
+    }
+
+    .foto-tatuaje {
+        margin-bottom: 8px;
+        border-radius: 2px;
+    }
+
+    .titulo-portafolio {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+
+    .nombre-artista {
+        font-size: 1.2rem;
+    }
+
+    .pagina-portafolio {
+        padding: 40px 4% 60px;
+    }
+
+    /* Galería del estudio en móvil */
+    .galeria-estudio {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .imagen-estudio {
+        box-shadow: 6px 6px 0px #F1689C;
+        padding: 6px;
+    }
+}
